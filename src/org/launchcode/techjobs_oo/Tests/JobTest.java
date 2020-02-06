@@ -46,7 +46,7 @@ public class JobTest {
     }
     @Test
     public void testEmptyFieldToString(){
-        Job job=new Job(null, new Employer(), new Location(), new PositionType(), new CoreCompetency());
+        Job job=new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
         assertTrue(job.toString().contains("\nID: "+job.getId()));
         assertTrue(job.toString().contains("\nName: "+"Data not available"));
         assertTrue(job.toString().contains("\nEmployer: "+"Data not available"));

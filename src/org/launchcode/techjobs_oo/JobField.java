@@ -44,7 +44,11 @@ public abstract class JobField {
     }
 
     public String getValue() {
-        return Objects.requireNonNullElse(value, "Data not available");
+        if(value.equals("")){
+            return "Data not available";
+        }else {
+            return value;
+        }
     }
 
     public void setValue(String value) {

@@ -69,7 +69,7 @@ public class Job {
 
     public CoreCompetency getCoreCompetency() {  return coreCompetency; }
 
-    public String getName() {      if(name==null){return "Data not available";}else{ return name; }}
+    public String getName() {      if(name.equals("")){return "Data not available";}else{ return name; }}
 
     public Employer getEmployer() {        return employer; }
 
